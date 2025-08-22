@@ -2,7 +2,7 @@ const formulario = document.getElementById('formulario');
 let resposta = document.getElementById('resposta');
 let erros = document.getElementById('erros');
 let chances = document.getElementById('chances');
-let tentativas = 1;
+let tentativas = 10;
 
 const min = 1;
 const max = 20;
@@ -23,7 +23,7 @@ function verificar_palpite(num, msg){
     }
 }
 
-while(tentativas<=5){
+while(tentativas>0){
     formulario.addEventListener('submit', function(event){
         event.preventDefault();
 
@@ -36,7 +36,8 @@ while(tentativas<=5){
         }
         
         verificar_palpite(chute, resposta);
-        tentativas += 1;
+        tentativas -= 10;
+        chances.textContent = tentativas;
 
     const teste = document.getElementById('teste');
     teste.textContent = numero
