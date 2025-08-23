@@ -8,17 +8,25 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 <body>
-    <h2>Adivinhe o número</h2><br>
-    <form id="formulario">
-        <label>Digite um palpite (de 1 a 20):</label>
-        <input type="number" id="chute">
-        <button type="submit" id="chutarbotao">Chutar</button>
-    </form><br>
+    <div id="iniciarjogo">
+        <h2>Adivinhe o Número</h2>
+        <button id="iniciar">Jogar</button>
+    </div>
 
-    <p>Você tem<span id="tentativas"></span> restantes</p>
+    <div id="principal" style="display: none;">
+        <h2>Adivinhe o número</h2><br>
+        <form id="formulario">
+            <label>Digite um palpite (de 1 a 20):</label>
+            <input type="number" id="chute">
+            <button type="submit" id="chutarbotao">Chutar</button>
+        </form><br>
 
-    <p id="teste"></p>
+        <p id="msg"></p>
+        <p>Você tem <span id="tentativas"></span> tentativas restantes</p>
+        <p id="chutes"></p>
 
+        <p id="teste"></p>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
