@@ -1,25 +1,24 @@
+<!--Levi Alves Sant'Ana e Lorena Galrão França-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinhe o número</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 <body>
-    <div class="principal">
     <h2>Adivinhe o número</h2><br>
     <form id="formulario">
         <label>Digite um palpite (de 1 a 20):</label>
-        <input type="number" id="chute"><br>
+        <input type="number" id="chute">
         <button type="submit" id="chutarbotao">Chutar</button>
     </form><br>
 
-    <p id="resposta"></p><br>
-    <p id="teste"></p><br>
-    <p id="chances"></p><br>
-    <h3>Tentativas:</h3> <span id="erros"></span>
-    </div>
+    <p>Você tem<span id="tentativas"></span> restantes</p>
+
+    <p id="teste"></p>
+
 </body>
 <script src="script.js"></script>
 </html>
