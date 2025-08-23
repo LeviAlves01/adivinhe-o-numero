@@ -1,32 +1,43 @@
 <!--Levi Alves Sant'Ana e Lorena Galrão França-->
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinhe o número</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 <body>
-    <div id="iniciarjogo">
+    <div id="menu">
         <h2>Adivinhe o Número</h2>
+        <div id="texto">Bem-vindo ao Adivinhe o Número!<br>Sorteamos um valor aleatório de 0 a 20 para
+        você descobrir qual é! Será que você consegue?</div>
         <button id="iniciar">Jogar</button>
     </div>
 
-    <div id="principal" style="display: none;">
-        <h2>Adivinhe o número</h2><br>
+
+    <div id="principal">
+        <h2 id="titulo">Adivinhe o número</h2><br>
         <form id="formulario">
-            <label>Digite um palpite (de 1 a 20):</label>
+            <label id="textoInput">Digite um palpite (de 1 a 20):</label>
             <input type="number" id="chute">
             <button type="submit" id="chutarbotao">Chutar</button>
         </form><br>
 
+
         <p id="msg"></p>
-        <p>Você tem <span id="tentativas"></span> tentativas restantes</p>
+        <div id="jogarnovamente" style="display:none;">
+            Deseja jogar novamente?<br>
+            <button id="jogardnv">Reiniciar</button>
+        </div>
+        <p id="msgTentativas">Você tem <span id="tentativas"></span> tentativas restantes</p>
         <p id="chutes"></p>
+
 
         <p id="teste"></p>
     </div>
+
+
 </body>
 <script src="script.js"></script>
 </html>
